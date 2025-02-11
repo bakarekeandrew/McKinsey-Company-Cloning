@@ -11,15 +11,21 @@
     <div class="flex flex-col sm:flex-row shadow-lg justify-between items-center shadow-xl p-6 space-y-4 sm:space-y-0 bg-blue-200 w-full">
       
       <!-- Logo -->
-      <div class="flex flex-col items-center text-center sm:flex-row">
-        <span class="text-2xl font-bold sm:text-lg">McKinsey</span>
-        <span class="text-2xl font-bold">& Company</span>
-      </div>
+        <div class="flex flex-row space-x-[70px]">
+          <button id="menu-btn" class="space-x-1 sm:hidden text-3xl focus:outline-none">
+            ☰
+          </button> 
+          <div class="flex flex-col items-center text-center sm:flex flex-row lg:flex flex-row">
+            <span class="text-xl font-bold sm:text-lg">McKinsey</span>
+            <span class="text-xl pl-10 font-bold">&Company</span>
+          </div>
+          <div class="space-x-20 flex flex-col sm:hidden">
+            <span class="pt-8 ">Search</span>
+          </div>
+        </div>
 
       <!-- Hamburger Menu (Visible on Small Screens) -->
-      <button id="menu-btn" class="sm:hidden text-3xl focus:outline-none">
-        ☰
-      </button>
+     
 
       <!-- Navigation Menu -->
       <nav id="menu" class="hidden sm:flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -35,14 +41,14 @@
       </nav>
 
       <!-- Sign In & Search -->
-      <div class="flex flex-col items-center space-y-4">
+      <div class=" hidden flex flex-col items-center s§pace-y-4">
         <span>Sign In | Subscribe</span>
         <span>Search</span>
       </div>
       
     </div>
     <!-- Main Content -->
-     <div class="grid grid-cols-2 gap-4 bg-blue-200 overflow-x-auto sm:overflow-hidden">
+     <div class="grid grid-cols-2 gap-4 bg-blue-200 sm:overflow-hidden">
        <div class="p-20">
           <h1 class="text-6xl font-bold font-serif">The future of office</h1>
           <p class="pt-5 font-serif">A major upheaval reduced demand for office space on a global scale. The question now is, “what’s the future of the office?”<br><br>
@@ -52,24 +58,24 @@
        </div>
        <img src="./images/mckiney.png" alt="Image 1" class="w-[400px] h-[420px] ml-60 pt-12"/>
      </div>
-     <div class="bg-gray-300 grid grid-cols-5">
-       <div class="uppercase text-center text-lg pt-3 font-bold">Trendind insights</div>
-       <div class="flex flex-row space-x-3">
+     <div class="bg-gray-300 flex overflow-x-scroll text-[10px] sm:text-lg">
+       <div class="uppercase text-center text-[10px] pt-3 font-bold min-w-[150px] sm:text-lg sm:min-w-[250px]">Trendind insights</div>
+       <div class="flex flex-row space-x-1 sm: flex flex-row min-w-[150px] sm:text-lg sm:min-w-[250px]">
           <h1 class="text-3xl text-blue-600">1</h1>
-          <p class="text-6xl text-blue-600">|</p>
-          <p>McKinsey and the World Economic Forum 2025</p>
+          <p class="text-5xl text-blue-600">|</p>
+          <p class="text-[12px] sm:text-[20px]">McKinsey and the World Economic Forum 2025</p>
        </div>
-       <div class="flex flex-row space-x-3">
+       <div class="flex flex-row space-x-3 min-w-[200px] sm:text-lg sm:min-w-[250px]">
           <h1 class="text-3xl text-blue-600">2</h1>
           <p class="text-6xl text-blue-600">|</p>
           <p>Dependency and depopulation? Confronting the consequences of a new</p>
        </div>
-       <div class="flex flex-row space-x-3">
+       <div class="flex flex-row space-x-3 min-w-[200px] sm:text-lg sm:min-w-[250px]">
            <h1 class="text-3xl text-blue-600">3</h1>
            <p class="text-6xl text-blue-600">|</p>
           <p>A proactive approach to navigating geopolitics is essential to thrive</p>
        </div>
-       <div class="flex flex-row space-x-3">
+       <div class="flex flex-row space-x-3 min-w-[200px] sm:text-lg sm:min-w-[250px]">
           <h1 class="text-3xl text-blue-600">4</h1>
           <p class="text-6xl text-blue-600">|</p>
           <p>What is Davos?</p>
